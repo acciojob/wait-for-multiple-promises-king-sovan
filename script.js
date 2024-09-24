@@ -19,7 +19,7 @@ Promise.all([promise1, promise2, promise3]).then((results) => {
 
 	document.getElementById('loading').remove();
 
-	const totalTime = ((performance.now() - startTime / 1000).toFixed(3));
+	const totalTime = ((performance.now() - startTime) / 1000).toFixed(3);
 
 	results.forEach((result) => {
 		const row = document.createElement('tr');
